@@ -18,13 +18,3 @@ public class Task4 {
         }
     }
 }
-
-
-
-
-
-
-
-
-
-

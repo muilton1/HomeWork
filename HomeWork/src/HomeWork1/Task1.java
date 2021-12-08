@@ -69,7 +69,8 @@ public class Task1 {
         a &= b; //то же, что и в строке 7
         b >>= 3;//то же, что и в строке 32
         float y = 42.5F;
-        //float z = y | (float a); побитовые операторы работают только с целыми числами
+        float yy = 21.25F;
+        // float yyy = y ^ yy; побитовые операторы работают только с целыми числами
         System.out.println("42 & 15 =" + c);
         System.out.println("42 | 15 =" + d);
         System.out.println("42 ^ 15 =" + e);
