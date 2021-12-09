@@ -2,19 +2,17 @@ package HomeWork1;
 
 public class Task4 {
     public static void main(String[] args) {
-        Task4 task4 = new Task4();
-        if (task4.sleepIn(false, false)) {
+        if (sleepIn(true, true)) {//задаем значения отпуска и рабочего дня, получаем ответ от метода sleepIn, на основании данного ответа,выполняется метод main
             System.out.println("Можем спать дальше");
         } else {
             System.out.println("Пора идти на работу");
         }
     }
 
-    public boolean sleepIn(boolean weekday, boolean vacation) {
-        if (weekday == false || vacation == true) {
+    public static boolean sleepIn(boolean weekday, boolean vacation) {//метод отвечает на вопрос, спать ли нам дальше
+        if (!weekday || vacation) {//если рабочий день = false или отпуск = true, возвращаем значение true
             return true;
-        } else {
-            return false;
         }
+        return false;//в остальных случаях,возвращаем false
     }
 }

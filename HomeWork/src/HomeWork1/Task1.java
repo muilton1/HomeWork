@@ -37,18 +37,18 @@ public class Task1 {
         // 15 = 00001111 , 1 = 00000001
         int n = -a & -b;
         /*   11010110 -42
-          &  11110001 -15
-          _____________
+         * & 11110001 -15
+         * _____________
              11010000 -48 */
         int o = -a | -b;
         /*   11010110 -42
-          |  11110001 -15
-           _____________
+         * | 11110001 -15
+         * _____________
              11110111 -9 */
         int p = -a ^ -b;
         /*   11010110 -42
-          ^  11110001 -15
-           _____________
+         * ^ 11110001 -15
+         * _____________
              00100111  39 */
         int q = ~(-a);
         // -42 = 11010110 , 41 = 00101001
@@ -69,8 +69,8 @@ public class Task1 {
         a &= b; //то же, что и в строке 7
         b >>= 3;//то же, что и в строке 32
         float y = 42.5F;
-        float yy = 21.25F;
-        // float yyy = y ^ yy; побитовые операторы работают только с целыми числами
+        /* https://cs-fundamentals.com/java-programming/java-bitwise-operators.php
+         * Bitwise operators cannot be used with floating-point, boolean, array, or object operands*/
         System.out.println("42 & 15 =" + c);
         System.out.println("42 | 15 =" + d);
         System.out.println("42 ^ 15 =" + e);
