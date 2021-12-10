@@ -1,8 +1,8 @@
-package HomeWork1;
+package home_work_1;
 
 public class Task4 {
     public static void main(String[] args) {
-        if (sleepIn(true, true)) {//задаем значения отпуска и рабочего дня, получаем ответ от метода sleepIn, на основании данного ответа,выполняется метод main
+        if (sleepIn(true, false)) {//задаем значения отпуска и рабочего дня, получаем ответ от метода sleepIn, на основании данного ответа,выполняется метод main
             System.out.println("Можем спать дальше");
         } else {
             System.out.println("Пора идти на работу");

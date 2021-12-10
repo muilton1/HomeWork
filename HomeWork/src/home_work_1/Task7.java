@@ -1,4 +1,4 @@
-package HomeWork1;
+package home_work_1;
 
 public class Task7 {
     //работает только на положительных числах и без 0 спереди :(
