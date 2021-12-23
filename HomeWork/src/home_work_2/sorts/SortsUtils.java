@@ -1,16 +1,11 @@
 package home_work_2.sorts;
 
-import java.util.Arrays;
 
 public class SortsUtils {
     public static void main(String[] args) {
-        shakerSort();
     }
 
-    public static void bubbleSort() {
-        int[] array = {1, 2, 3, 6, 5, 6,};
-        System.out.print(Arrays.toString(array) + "-->");
-
+    public static int[] bubbleSort(int[] array) {
         for (int i = 0; i < array.length - 1; i++) {
             for (int j = array.length - 1; j > i; j--) {
                 if (array[j - 1] > array[j]) {
@@ -20,12 +15,10 @@ public class SortsUtils {
                 }
             }
         }
-        System.out.print(Arrays.toString(array));
+        return array;
     }
 
-    public static void shakerSort() {
-        int[] array = {1, 221, 3, 6564, 5, 6,};
-        System.out.println(Arrays.toString(array));
+    public static int[] shakerSort(int[] array) {
         int left = 0;
         int right = array.length - 1;
         while (left <= right) {
@@ -48,7 +41,7 @@ public class SortsUtils {
             }
             --right;
         }
-        System.out.println(Arrays.toString(array));
+        return array;
     }
 }
 
