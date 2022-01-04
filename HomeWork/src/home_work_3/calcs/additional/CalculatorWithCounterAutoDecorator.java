@@ -4,7 +4,7 @@ package home_work_3.calcs.additional;
 import home_work_3.calcs.api.ICalculator;
 
 public class CalculatorWithCounterAutoDecorator implements ICalculator {
-    private int count = 0;
+    private long count = 0;
     private ICalculator calculator;
 
     public CalculatorWithCounterAutoDecorator(ICalculator calculator) {

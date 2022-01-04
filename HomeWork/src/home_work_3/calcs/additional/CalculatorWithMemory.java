@@ -1,17 +1,15 @@
 package home_work_3.calcs.additional;
 
 import home_work_3.calcs.api.ICalculator;
-import home_work_3.calcs.simple.CalculatorWithMathExtends;
 
 
 public class CalculatorWithMemory implements ICalculator {
     private double result = 0;
-    private CalculatorWithMathExtends calculator;
+    private ICalculator calculator;
 
-    public CalculatorWithMemory(CalculatorWithMathExtends calculator) {
+    public CalculatorWithMemory(ICalculator calculator) {
         this.calculator = calculator;
     }
-
 
     public double getDivision(double a, double b) {
         result = calculator.getDivision(a, b);
