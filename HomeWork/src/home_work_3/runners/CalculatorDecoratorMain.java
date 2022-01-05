@@ -11,7 +11,7 @@ public class CalculatorDecoratorMain {
         ICalculator calc = new CalculatorWithCounterAutoDecorator(new CalculatorWithMemoryDecorator(new CalculatorWithMathExtends()));
         System.out.println(calc.getAddition(4.1, calc.getAddition(calc.getMultiplication(15, 7), calc.getPow(calc.getDivision(28, 5), 2))));
         System.out.println(((CalculatorWithCounterAutoDecorator) calc).getCountOperation());
-        //System.out.println(((CalculatorWithMemoryDecorator) calc).getResult());
+        System.out.println(((CalculatorWithMemoryDecorator) ((CalculatorWithCounterAutoDecorator) calc).getCalculator()).getResult());
     }
 }
 
