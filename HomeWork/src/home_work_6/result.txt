@@ -1,0 +1,6 @@
+Book file path and name - HomeWork/src/home_work_6/books/Война и мир.txt , Interest word - война , Amount of repeated word - 52
+Book file path and name - HomeWork/src/home_work_6/books/Война и мир.txt , Interest word - и , Amount of repeated word - 14594
+Book file path and name - HomeWork/src/home_work_6/books/Война и мир.txt , Interest word - мир , Amount of repeated word - 33
+Book file path and name - HomeWork/src/home_work_6/books/Zefirka.txt , Interest word - зефирка , Amount of repeated word - 34
+
+
